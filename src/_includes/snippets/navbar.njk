@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       <img src="/img/logo.png" width="30px" alt="Home">
       Slow Heat Index
     </a>
@@ -12,20 +12,11 @@
 
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home
-            <span class="visually-hidden">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">BlockDasher</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
+        {%- for entry in collections.all | eleventyNavigation %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ entry.url | url }}">{{ entry.title }}</a>
+          </li>
+        {%- endfor %}
       </ul>
     </div>
   </div>
