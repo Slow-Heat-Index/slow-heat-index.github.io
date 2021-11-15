@@ -106,6 +106,7 @@ $navbar-light-color:                rgba($gray-900, .7) !default;
 $navbar-light-hover-color:          $gray-900 !default;
 $navbar-light-active-color:         $gray-900 !default;
 $navbar-light-toggler-border-color: rgba($gray-900, .1) !default;
+$nav-fill-transition:               fill .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 
 // Pagination
 

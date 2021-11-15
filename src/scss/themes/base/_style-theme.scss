@@ -32,6 +32,31 @@ body {
   background-position: 100%;
 }
 
+.nav-button {
+  color: rgba(255, 255, 255, 0.6);
+  fill:  rgba(255, 255, 255, 0.6);
+  @include transition($nav-link-transition);
+  @include transition($nav-fill-transition);
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    fill: #ffffff;
+  }
+
+  // Disabled state lightens text
+  &.disabled {
+    color: $nav-link-disabled-color;
+    fill: $nav-link-disabled-color;
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+.w-200px {
+  width: 250px !important;
+}
+
 .my-vh-1 {
   margin-top:1vh;
   margin-bottom:1vh;
