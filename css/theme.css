@@ -7844,6 +7844,29 @@ body {
 .link-fancy:hover:before {
   background-position: 100%; }
 
+.nav-button {
+  color: rgba(255, 255, 255, 0.6);
+  fill: rgba(255, 255, 255, 0.6);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: fill 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
+  @media (prefers-reduced-motion: reduce) {
+    .nav-button {
+      transition: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .nav-button {
+      transition: none; } }
+  .nav-button:hover, .nav-button:focus {
+    color: #ffffff;
+    fill: #ffffff; }
+  .nav-button.disabled {
+    color: #adb5bd;
+    fill: #adb5bd;
+    pointer-events: none;
+    cursor: default; }
+
+.w-200px {
+  width: 250px !important; }
+
 .my-vh-1 {
   margin-top: 1vh;
   margin-bottom: 1vh; }
