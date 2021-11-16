@@ -7819,6 +7819,10 @@ textarea.form-control-lg {
   font-family: main;
   src: url("/font/main.woff") format("truetype"); }
 
+@font-face {
+  font-family: secondary;
+  src: url("/font/secondary.woff") format("truetype"); }
+
 body {
   letter-spacing: -.02rem; }
 
@@ -7847,6 +7851,9 @@ body {
 
 .link-fancy:hover:before {
   background-position: 100%; }
+
+.navbar {
+  background: linear-gradient(0deg, #1c3806 0%, #39700C 10%, #39700C) !important; }
 
 .nav-button {
   color: rgba(255, 255, 255, 0.6);
@@ -7899,13 +7906,13 @@ body {
   margin-top: -5px;
   background: linear-gradient(180deg, #462d16 0%, #9C652F 10%, #9C652F); }
 
-.block-dash-title {
-  font-family: main, serif;
-  font-size: 8vw; }
-
 .block-dash-subtitle {
-  font-family: main, serif;
+  font-family: secondary, serif;
   font-size: 3vw; }
+
+.block-dash-text {
+  font-family: secondary, serif;
+  font-size: 1vw; }
 
 .w-200px {
   width: 250px !important; }
@@ -7957,6 +7964,3 @@ body {
 .py-vh-6 {
   padding-top: 14vh;
   padding-bottom: 14vh; }
-
-.nav-link:hover, .nav-link:active {
-  background-color: blue !important; }
