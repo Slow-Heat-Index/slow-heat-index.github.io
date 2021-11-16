@@ -7884,10 +7884,12 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 100%;
   width: 100%;
+  height: auto;
   transform: translate(-50%, -50%);
-  z-index: 100; }
+  z-index: 100;
+  display: flex;
+  justify-content: center; }
 
 .main-title > img {
   width: 80%;
@@ -7899,11 +7901,11 @@ body {
 
 .block-dash-title {
   font-family: main, serif;
-  font-size: 10em; }
+  font-size: 8vw; }
 
 .block-dash-subtitle {
   font-family: main, serif;
-  font-size: 3em; }
+  font-size: 3vw; }
 
 .w-200px {
   width: 250px !important; }
