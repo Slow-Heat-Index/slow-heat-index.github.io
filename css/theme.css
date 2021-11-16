@@ -7815,6 +7815,10 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+@font-face {
+  font-family: main;
+  src: url("/font/main.woff") format("truetype"); }
+
 body {
   letter-spacing: -.02rem; }
 
@@ -7869,8 +7873,33 @@ body {
   border-width: 20px;
   border-radius: 20px; }
 
-.title-background {
-  background: #49940C; }
+.main-container {
+  position: relative;
+  top: 0; }
+
+.main-video {
+  width: 100%; }
+
+.main-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  width: auto;
+  z-index: 100; }
+
+.block-dash-title-container {
+  margin-top: -5px;
+  background: linear-gradient(180deg, #462d16 0%, #9C652F 10%, #9C652F); }
+
+.block-dash-title {
+  font-family: main, serif;
+  font-size: 10em; }
+
+.block-dash-subtitle {
+  font-family: main, serif;
+  font-size: 3em; }
 
 .w-200px {
   width: 250px !important; }
@@ -7922,3 +7951,6 @@ body {
 .py-vh-6 {
   padding-top: 14vh;
   padding-bottom: 14vh; }
+
+.nav-link:hover, .nav-link:active {
+  background-color: blue !important; }
