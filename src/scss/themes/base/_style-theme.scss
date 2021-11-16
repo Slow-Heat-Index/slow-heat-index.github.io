@@ -79,11 +79,20 @@ body {
 
 .main-container {
   position: relative;
+  overflow: hidden;
   top: 0;
 }
 
 .main-video {
   width: 100%;
+  min-width: 1000px;
+  left: 50%;
+}
+
+@media (max-width: 1000px) {
+  .main-video {
+    transform: translate(calc(-500px + 50vw), 0%)
+  }
 }
 
 .main-title {
@@ -91,18 +100,27 @@ body {
   top: 50%;
   left: 50%;
   width: 100%;
-  height: auto;
+  height: 100%;
   transform: translate(-50%, -50%);
   z-index: 100;
 
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .main-title > img {
-  width: 80%;
-  height: auto;
+  width: auto;
+  height: 80%;
+  content: url("/img/logo-index.png");
 }
+
+@media (max-width: 1000px) {
+  .main-title > img {
+    content: url("/img/logo-index-small.png");
+  }
+}
+
 
 .block-dash-title-container {
   margin-top: -5px;
