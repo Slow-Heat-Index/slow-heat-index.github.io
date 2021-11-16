@@ -4,6 +4,12 @@
             <img src="/img/logo.png" width="30px" alt="Home">
             Slow Heat Index
         </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav me-auto">
                 {% for entry in collections.all | eleventyNavigation %}
@@ -16,14 +22,14 @@
                     </li>
                 {%- endfor %}
             </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item container">
+                    <div class="row w-200px ms-auto">
+                        {% include "snippets/contactlogos.njk" %}
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="row justify-content-end w-200px">
-            {% include "snippets/contactlogos.njk" %}
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
     </div>
 </nav>
 
