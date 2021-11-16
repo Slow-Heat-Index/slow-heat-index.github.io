@@ -3,6 +3,11 @@
   src: url("/font/main.woff") format("truetype");
 }
 
+@font-face {
+  font-family: secondary;
+  src: url("/font/secondary.woff") format("truetype");
+}
+
 body {
   letter-spacing: -.02rem;
 }
@@ -35,6 +40,14 @@ body {
 
 .link-fancy:hover:before {
   background-position: 100%;
+}
+
+.navbar {
+  background: $bg-nav !important;
+
+  &:hover,
+  &:active {
+  }
 }
 
 .nav-button {
@@ -96,14 +109,14 @@ body {
   background: $bg-main;
 }
 
-.block-dash-title {
-  font-family: main, serif;
-  font-size: 8vw;
+.block-dash-subtitle {
+  font-family: secondary, serif;
+  font-size: 3vw;
 }
 
-.block-dash-subtitle {
-  font-family: main, serif;
-  font-size: 3vw;
+.block-dash-text {
+  font-family: secondary, serif;
+  font-size: 1vw;
 }
 
 .w-200px {
@@ -168,11 +181,4 @@ body {
 .py-vh-6 {
   padding-top: 14vh;
   padding-bottom: 14vh;
-}
-
-.nav-link {
-  &:hover,
-  &:active {
-    background-color: blue !important;
-  }
 }
