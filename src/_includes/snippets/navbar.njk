@@ -11,7 +11,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto">
+            <ul class="navbar-nav me-auto ms-auto">
                 {% for entry in collections.all | eleventyNavigation %}
                     <li class="nav-item">
                         {% if entry.url == page.url %}

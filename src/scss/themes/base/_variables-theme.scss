@@ -88,8 +88,6 @@ $dropdown-link-hover-color:         $white !default;
 $dropdown-link-hover-bg:            $primary !default;
 
 // Navs
-
-
 $nav-link-padding-x:                2rem !default;
 $nav-link-disabled-color:           $gray-500 !default;
 $nav-tabs-border-color:             $gray-700 !default;
@@ -177,4 +175,5 @@ $pre-color:                         inherit !default;
 // Highlight
 
 $bg-highlight: #d2c0af;
-$bg-main: #49940C;
+$bg-nav: linear-gradient(180deg, rgb(70, 45, 22) 0%, $body-bg 10%, $body-bg);
+$bg-nav: linear-gradient(0deg, #1c3806 0%, $primary 10%, $primary);
