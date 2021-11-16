@@ -53,6 +53,17 @@ body {
   }
 }
 
+.highlight-background {
+  background: $bg-highlight;
+  border-width: 20px;
+  border-radius: 20px;
+}
+
+.title-background {
+  background: $bg-main;
+}
+
+
 .w-200px {
   width: 250px !important;
 }

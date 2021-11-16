@@ -30,7 +30,7 @@ $green: #1bbed9 !default;
 $teal:    #20c997 !default;
 $cyan:    #3498db !default;
 
-$primary:       $blue !default;
+$primary:       #39700C !default;
 $secondary:     $gray-700 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -43,8 +43,8 @@ $min-contrast-ratio:   1.9 !default;
 
 // Body
 
-$body-bg:                   $gray-900 !default;
-$body-color:                $white !default;
+$body-bg:                   #9C652F !default;
+$body-color:                $black !default;
 
 // Links
 
@@ -173,3 +173,8 @@ $btn-close-hover-opacity:    1 !default;
 // Code
 
 $pre-color:                         inherit !default;
+
+// Highlight
+
+$bg-highlight: #d2c0af;
+$bg-main: #49940C;
