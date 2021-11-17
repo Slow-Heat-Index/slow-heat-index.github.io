@@ -1,5 +1,5 @@
-<div class="about-container">
-    <h2 id="about" class="text-center about-title">
+<div id="about" class="about-container">
+    <h2 class="text-center about-title">
         THE TEAM
     </h2>
 
@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
             {% for teammate in collections.teammate %}
                 {% if teammate.data.role != undefined %}
-                {% include 'layouts/teammate.njk' %}
+                    {% include 'layouts/teammate.njk' %}
                 {% endif %}
             {% endfor %}
         </div>
