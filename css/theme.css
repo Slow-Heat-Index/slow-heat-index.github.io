@@ -7817,11 +7817,15 @@ textarea.form-control-lg {
 
 @font-face {
   font-family: main;
-  src: url("/font/main.woff") format("truetype"); }
+  src: url("/font/main.woff"); }
 
 @font-face {
   font-family: secondary;
-  src: url("/font/secondary.woff") format("truetype"); }
+  src: url("/font/secondary.woff"); }
+
+@font-face {
+  font-family: serious;
+  src: url("/font/serious.woff"); }
 
 body {
   letter-spacing: -.02rem; }
@@ -7906,6 +7910,19 @@ body {
   justify-content: center;
   align-items: center; }
 
+.main-title-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .main-title > img {
   width: auto;
   height: 80%;
@@ -7915,17 +7932,69 @@ body {
   .main-title > img {
     content: url("/img/logo-index-small.png"); } }
 
-.block-dash-title-container {
+.block-dasher-title-container {
   margin-top: -5px;
-  background: linear-gradient(180deg, #462d16 0%, #9C652F 10%, #9C652F); }
+  background: linear-gradient(180deg, #6e4723 0%, #9C652F 5%, #9C652F); }
 
-.block-dash-subtitle {
+.block-dasher-subtitle {
   font-family: secondary, serif;
   font-size: 3vw; }
 
-.block-dash-text {
+.block-dasher-text {
   font-family: secondary, serif;
-  font-size: 16px; }
+  font-size: 24px; }
+
+@media (max-width: 500px) {
+  .block-dasher-text {
+    font-size: 18px; } }
+
+.block-dasher-node-container {
+  margin: 1em 3em; }
+
+.block-dasher-node-title {
+  font-family: secondary, serif;
+  margin-bottom: 1em; }
+
+.block-dasher-play-now-container {
+  background: linear-gradient(0deg, #6e4723 0%, #9C652F 5%, #9C652F); }
+
+.block-dasher-play-now {
+  font-family: secondary, serif;
+  font-size: 6em; }
+
+.about-container {
+  background: #95d3e3; }
+
+.about-title {
+  font-family: serious, serif;
+  font-size: 10em; }
+
+@media (max-width: 500px) {
+  .about-title {
+    font-size: 6em; } }
+
+.about-avatar-container {
+  padding: 10px 40px; }
+
+.about-avatar-icon {
+  border-radius: 50%;
+  margin-bottom: 1em;
+  transition: filter 0.3s ease-in-out; }
+  .about-avatar-icon:hover {
+    filter: brightness(50%); }
+
+.about-avatar-name {
+  font-family: serious, serif;
+  font-size: 40px;
+  text-align: center; }
+
+.about-avatar-role {
+  font-family: serious, serif;
+  font-size: 30px;
+  text-align: center; }
+
+.about-avatar-text p {
+  text-align: center; }
 
 .w-200px {
   width: 250px !important; }
