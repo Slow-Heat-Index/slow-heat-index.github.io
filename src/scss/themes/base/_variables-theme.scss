@@ -178,7 +178,5 @@ $bg-highlight: #d2c0af;
 $bg-main: linear-gradient(180deg, #6e4723 0%, $body-bg 5%, $body-bg);
 $bg-main-out: linear-gradient(0deg, #6e4723 0%, $body-bg 5%, $body-bg);
 $bg-nav: linear-gradient(0deg, #1c3806 0%, $primary 10%, $primary);
-
-// About
-
-$bg-about: rgb(149, 211, 227);
+$bg-about: linear-gradient(0deg, #597f88 0%, #95d3e3 5%, #95d3e3);
+$bg-contact: linear-gradient(0deg, #966363 0%, #e39595 5%, #e39595);

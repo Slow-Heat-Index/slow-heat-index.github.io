@@ -1,5 +1,5 @@
 {
-    "layout": "layouts/teammate.njk",
+    "layout": "snippets/teammate.njk",
     "tags": [
       "teammate"
     ]
