@@ -1,0 +1,17 @@
+<div class="col-12 col-lg-4">
+    <div class="about-avatar-container">
+        <a href="{{ teammate.data.twitter }}">
+            <img class="w-100 h-auto about-avatar-icon" src="{{ teammate.data.icon }}">
+        </a>
+
+        <h3 class="about-avatar-name">
+            {{ teammate.data.name }}
+        </h3>
+        <h3 class="about-avatar-role">
+            {{ teammate.data.role }}
+        </h3>
+        <div class="about-avatar-text">
+            {{ teammate.templateContent | safe }}
+        </div>
+    </div>
+</div>

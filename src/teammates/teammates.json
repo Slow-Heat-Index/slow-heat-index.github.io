@@ -1,0 +1,6 @@
+{
+    "layout": "layouts/teammate.njk",
+    "tags": [
+      "teammate"
+    ]
+}
