@@ -7964,7 +7964,7 @@ body {
   font-size: 6em; }
 
 .about-container {
-  background: #95d3e3; }
+  background: linear-gradient(0deg, #597f88 0%, #95d3e3 5%, #95d3e3); }
 
 .about-title {
   font-family: serious, serif;
@@ -7996,6 +7996,39 @@ body {
 
 .about-avatar-text p {
   text-align: center; }
+
+.contact-container {
+  background: linear-gradient(0deg, #966363 0%, #e39595 5%, #e39595); }
+
+.contact-title {
+  font-family: serious, serif;
+  font-size: 10em; }
+
+@media (max-width: 500px) {
+  .contact-title {
+    font-size: 6em; } }
+
+.contact-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+@media (min-width: 500px) {
+  .contact-card {
+    transform: perspective(525px) translateZ(0) rotateX(var(--dx)) rotateY(var(--dy));
+    transition: transform 150ms linear 0s; } }
+
+.contact-card-inner {
+  flex-direction: column;
+  text-align: center;
+  width: 18em;
+  height: 10em;
+  padding: 2em;
+  border-color: #fff;
+  border-width: 10px;
+  border-radius: 5px;
+  background: #fff; }
 
 .w-200px {
   width: 250px !important; }
