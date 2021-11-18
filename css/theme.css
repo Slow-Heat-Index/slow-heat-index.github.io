@@ -7938,8 +7938,10 @@ body {
   height: auto;
   content: url("/img/logo-index.png"); }
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
   .main-title > img {
+    width: 80%;
+    height: auto;
     content: url("/img/logo-index-small.png"); } }
 
 .block-dasher-container-background {
