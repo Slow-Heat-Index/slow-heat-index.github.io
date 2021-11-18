@@ -43,7 +43,7 @@ $min-contrast-ratio: 1.9 !default;
 
 // Body
 
-$body-bg: #6D4C3D !default;
+$body-bg: rgba(125, 83, 44, 1) !default;
 $body-color: $black !default;
 
 // Links
@@ -175,8 +175,9 @@ $pre-color: inherit !default;
 // Highlight
 
 $bg-highlight: #d2c0af;
-$bg-main: linear-gradient(180deg, #3b2a22 0%, $body-bg 5%, $body-bg);
-$bg-main-out: linear-gradient(0deg, #3b2a22 0%, $body-bg 5%, $body-bg);
+$bg-main: linear-gradient(180deg, rgb(16, 75, 35) 0%, rgba(30, 144, 68, 1) 5%, rgba(30, 144, 68, 1) 30%, rgba(139, 91, 50, 1) 30%, rgba(139, 91, 50, 1) 40%, rgba(133, 91, 50, 1) 40%, rgba(133, 91, 50, 1) 85%, rgba(125, 83, 44, 1) 85%);
+$bg-main-mid: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.7));
+$bg-main-out: linear-gradient(0deg, rgb(75, 50, 26) 0%, $body-bg 5%, $body-bg);
 $bg-nav: linear-gradient(0deg, #5f6c3f 0%, $primary 10%, $primary);
 $bg-about: linear-gradient(0deg, #597f88 0%, #95d3e3 5%, #95d3e3);
 $bg-contact: linear-gradient(0deg, #966363 0%, #e39595 5%, #e39595);

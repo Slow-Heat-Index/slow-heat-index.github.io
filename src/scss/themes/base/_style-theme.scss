@@ -76,13 +76,13 @@ body {
   }
 }
 
-.navbar-brand{
+.navbar-brand {
   font-family: serious, serif;
   font-size: 28px;
 }
 
 
-.nav-item{
+.nav-item {
   font-family: serious, serif;
   font-size: 24px;
 }
@@ -153,6 +153,11 @@ body {
   }
 }
 
+.block-dasher-container-background {
+  background: $bg-main-mid scroll, url("/img/block-dasher-background.png") fixed center no-repeat;
+  background-size: cover;
+}
+
 .block-dasher-container {
 }
 
@@ -164,11 +169,13 @@ body {
 .block-dasher-subtitle {
   font-family: secondary, serif;
   font-size: 3vw;
+  text-shadow: 2px 2px 0 #ffffff, 3px 2px 0 #ffffff;
 }
 
 .block-dasher-text {
   font-family: secondary, serif;
   font-size: 24px;
+  text-shadow: 2px 2px 0 #ffffff, 3px 2px 0 #ffffff;
 }
 
 @media (max-width: 500px) {
@@ -177,13 +184,20 @@ body {
   }
 }
 
+.block-dasher-image {
+  box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 1%;
+}
+
 .block-dasher-node-container {
   margin: 1em 1em;
 }
 
 .block-dasher-node-title {
   font-family: secondary, serif;
+  font-size: 45px;
   margin-bottom: 1em;
+  text-shadow: 2px 2px 0 #ffffff, 4px 2px 0 #ffffff;
 }
 
 .block-dasher-play-now-container {
@@ -193,6 +207,43 @@ body {
 .block-dasher-play-now {
   font-family: secondary, serif;
   font-size: 6em;
+  text-shadow: 2px 2px 0 #ffffff, 3px 2px 0 #ffffff;
+}
+
+.block-dasher-play-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.block-dasher-play-button > a {
+  display: flex;
+  justify-content: center;
+}
+
+.block-dasher-play-button-image-container {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+}
+
+.block-dasher-play-button-image-pressed {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: auto;
+  z-index: 10;
+}
+
+.block-dasher-play-button-image {
+  max-width: 90%;
+  height: auto;
+  &:hover {
+    opacity: 0.01;
+  }
+  z-index: 20;
 }
 
 .about-container {
@@ -219,6 +270,7 @@ body {
   margin-bottom: 1em;
 
   transition: filter 0.3s ease-in-out;
+
   &:hover {
     filter: brightness(50%);
   }
@@ -282,6 +334,21 @@ body {
   border-width: 10px;
   border-radius: 5px;
   background: $white;
+}
+
+.footer {
+  background: $primary;
+}
+
+.footer-brand {
+  font-family: serious, serif;
+  font-size: 28px;
+  color: $black;
+  text-decoration: none;
+
+  &:hover {
+    color: $white;
+  }
 }
 
 .w-200px {
