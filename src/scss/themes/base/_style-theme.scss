@@ -94,10 +94,13 @@ body {
 }
 
 .main-container {
-  margin-top: 70px;
   position: relative;
   overflow: hidden;
   top: 0;
+}
+
+.main-spacer {
+  height: 84px;
 }
 
 .main-video {
@@ -185,6 +188,7 @@ body {
 @media (max-width: 1000px) {
   .block-dasher-subtitle {
     font-size: 30px;
+    text-shadow: 2px 2px 0 #ffffff;
   }
 }
 
