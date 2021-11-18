@@ -145,13 +145,15 @@ body {
 
 
 .main-title > img {
-  width: auto;
-  height: 80%;
+  width: 90%;
+  height: auto;
   content: url("/img/logo-index.png");
 }
 
 @media (max-width: 1000px) {
   .main-title > img {
+    width: auto;
+    height: 90%;
     content: url("/img/logo-index-small.png");
   }
 }
