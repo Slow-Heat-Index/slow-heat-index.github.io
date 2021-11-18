@@ -30,7 +30,7 @@ $green: #1bbed9 !default;
 $teal: #20c997 !default;
 $cyan: #3498db !default;
 
-$primary: #39700C !default;
+$primary: #b2cc75 !default;
 $secondary: $gray-700 !default;
 $success: $green !default;
 $info: $cyan !default;
@@ -43,7 +43,7 @@ $min-contrast-ratio: 1.9 !default;
 
 // Body
 
-$body-bg: #9C652F !default;
+$body-bg: #6D4C3D !default;
 $body-color: $black !default;
 
 // Links
@@ -97,9 +97,10 @@ $nav-tabs-link-active-border-color: $nav-tabs-border-color $nav-tabs-border-colo
 
 // Navbar
 
+$navbar-dark-brand-color: $black !default;
 $navbar-padding-y: 1rem !default;
-$navbar-dark-color: rgba($white, .6) !default;
-$navbar-dark-hover-color: $white !default;
+$navbar-dark-color: rgba($black, .6) !default;
+$navbar-dark-hover-color: $black !default;
 $navbar-light-color: rgba($gray-900, .7) !default;
 $navbar-light-hover-color: $gray-900 !default;
 $navbar-light-active-color: $gray-900 !default;
@@ -166,7 +167,6 @@ $breadcrumb-border-radius: .25rem !default;
 
 $btn-close-color: $white !default;
 $btn-close-opacity: .4 !default;
-$btn-close-hover-opacity: 1 !default;
 
 // Code
 
@@ -175,8 +175,8 @@ $pre-color: inherit !default;
 // Highlight
 
 $bg-highlight: #d2c0af;
-$bg-main: linear-gradient(180deg, #6e4723 0%, $body-bg 5%, $body-bg);
-$bg-main-out: linear-gradient(0deg, #6e4723 0%, $body-bg 5%, $body-bg);
-$bg-nav: linear-gradient(0deg, #1c3806 0%, $primary 10%, $primary);
+$bg-main: linear-gradient(180deg, #3b2a22 0%, $body-bg 5%, $body-bg);
+$bg-main-out: linear-gradient(0deg, #3b2a22 0%, $body-bg 5%, $body-bg);
+$bg-nav: linear-gradient(0deg, #5f6c3f 0%, $primary 10%, $primary);
 $bg-about: linear-gradient(0deg, #597f88 0%, #95d3e3 5%, #95d3e3);
 $bg-contact: linear-gradient(0deg, #966363 0%, #e39595 5%, #e39595);

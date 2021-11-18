@@ -56,15 +56,15 @@ body {
 }
 
 .nav-button {
-  color: rgba(255, 255, 255, 0.6);
-  fill: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.8);
+  fill: rgba(0, 0, 0, 0.8);
   @include transition($nav-link-transition);
   @include transition($nav-fill-transition);
 
   &:hover,
   &:focus {
-    color: #ffffff;
-    fill: #ffffff;
+    color: #000000;
+    fill: #000000;
   }
 
   // Disabled state lightens text
@@ -74,6 +74,17 @@ body {
     pointer-events: none;
     cursor: default;
   }
+}
+
+.navbar-brand{
+  font-family: serious, serif;
+  font-size: 28px;
+}
+
+
+.nav-item{
+  font-family: serious, serif;
+  font-size: 24px;
 }
 
 .highlight-background {
