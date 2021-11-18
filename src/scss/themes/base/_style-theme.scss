@@ -166,10 +166,26 @@ body {
   background: $bg-main;
 }
 
+.block-dasher-title-container > img {
+  content: url("/img/block-dasher.png");
+}
+
+@media (max-width: 1000px) {
+  .block-dasher-title-container > img {
+    content: url("/img/block-dasher-small.png");
+  }
+}
+
 .block-dasher-subtitle {
   font-family: secondary, serif;
   font-size: 3vw;
   text-shadow: 2px 2px 0 #ffffff, 3px 2px 0 #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .block-dasher-subtitle {
+    font-size: 30px;
+  }
 }
 
 .block-dasher-text {
@@ -221,27 +237,12 @@ body {
   justify-content: center;
 }
 
-.block-dasher-play-button-image-container {
-  display: flex;
-  justify-content: center;
-
-  position: relative;
-}
-
-.block-dasher-play-button-image-pressed {
-  position: absolute;
-  top: 0;
-  left: 5%;
-  width: 90%;
-  height: auto;
-  z-index: 10;
-}
-
 .block-dasher-play-button-image {
   max-width: 90%;
   height: auto;
+  content: url("/img/block-dasher-button.png");
   &:hover {
-    opacity: 0.01;
+    content: url("/img/block-dasher-button-pressed.png");
   }
   z-index: 20;
 }
