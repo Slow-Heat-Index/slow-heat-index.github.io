@@ -262,9 +262,9 @@ body {
 .download-pc-image {
   max-width: 90%;
   height: auto;
-  content: url("/img/download-pc.bmp");
+  content: url("/img/download-pc.png");
   &:hover {
-    content: url("/img/download-pc-pressed.bmp");
+    content: url("/img/download-pc-pressed.png");
   }
   z-index: 20;
 }
@@ -272,9 +272,9 @@ body {
 .download-apple-image {
   max-width: 90%;
   height: auto;
-  content: url("/img/download-apple.bmp");
+  content: url("/img/download-apple.png");
   &:hover {
-    content: url("/img/download-apple-pressed.bmp");
+    content: url("/img/download-apple-pressed.png");
   }
   z-index: 20;
 }
@@ -282,9 +282,9 @@ body {
 .download-android-image {
   max-width: 90%;
   height: auto;
-  content: url("/img/download-android.bmp");
+  content: url("/img/download-android.png");
   &:hover {
-    content: url("/img/download-android-pressed.bmp");
+    content: url("/img/download-android-pressed.png");
   }
   z-index: 20;
 }
