@@ -7999,6 +7999,11 @@ body {
   font-size: 6em;
   text-shadow: 2px 2px 0 #ffffff, 3px 2px 0 #ffffff; }
 
+.block-dasher-download {
+  font-family: secondary, serif;
+  font-size: 4em;
+  text-shadow: 2px 2px 0 #ffffff, 3px 2px 0 #ffffff; }
+
 .block-dasher-play-button {
   display: flex;
   justify-content: center;
@@ -8015,6 +8020,30 @@ body {
   z-index: 20; }
   .block-dasher-play-button-image:hover {
     content: url("/img/block-dasher-button-pressed.png"); }
+
+.download-pc-image {
+  max-width: 90%;
+  height: auto;
+  content: url("/img/download-pc.png");
+  z-index: 20; }
+  .download-pc-image:hover {
+    content: url("/img/download-pc-pressed.png"); }
+
+.download-apple-image {
+  max-width: 90%;
+  height: auto;
+  content: url("/img/download-apple.png");
+  z-index: 20; }
+  .download-apple-image:hover {
+    content: url("/img/download-apple-pressed.png"); }
+
+.download-android-image {
+  max-width: 90%;
+  height: auto;
+  content: url("/img/download-android.png");
+  z-index: 20; }
+  .download-android-image:hover {
+    content: url("/img/download-android-pressed.png"); }
 
 .about-container {
   background: linear-gradient(0deg, #597f88 0%, #95d3e3 5%, #95d3e3); }
